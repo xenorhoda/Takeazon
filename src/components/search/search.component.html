@@ -1,2 +1,5 @@
-<app-input (textValue)="handleSearchValueEmit($event)"></app-input>
+<app-input
+  (textValue)="handleSearchValueEmit($event)"
+  [inputType]="'text'"
+></app-input>
 <app-button (clickMe)="handleSearchClick()">Search</app-button>
