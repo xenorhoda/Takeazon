@@ -1,1 +1,13 @@
-<p>toast works!</p>
+@if (toast(); as t) {
+  <div [class]="toastClass()" role="status" aria-live="polite">
+    <span class="toast__message">{{ t.message }}</span>
+    <button
+      type="button"
+      class="toast__close"
+      aria-label="Dismiss notification"
+      (click)="close()"
+    >
+      ×
+    </button>
+  </div>
+}

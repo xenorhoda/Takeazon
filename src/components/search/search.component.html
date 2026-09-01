@@ -1,7 +1,2 @@
 <app-input (textValue)="handleSearchValueEmit($event)"></app-input>
 <app-button (clickMe)="handleSearchClick()">Search</app-button>
-<app-button (clickMe)="toggleToast()">Toggle Toast</app-button>
-
-@if(showToast()){
-<app-toast></app-toast>
-}
